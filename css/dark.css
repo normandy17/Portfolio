@@ -121,13 +121,21 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: url(../images/back.jpg) no-repeat ;
+    /* background: url(../images/back.jpg) no-repeat ;
     background-size: auto 100%;
     background-position: center;
-    background-color:rgb(13, 13, 13);
+    background-color:rgb(13, 13, 13); */
     background-attachment: fixed;
-    z-index: 99;
-    
+    z-index: 99;    
+}
+
+.home img{
+    position: absolute;
+    left:0;
+    top: 0;
+    margin-left: 20%;
+    margin-top: 10%;
+    z-index:-99;
 }
 
 .home h1{
@@ -135,6 +143,7 @@ section{
     text-transform: uppercase;
     text-shadow: 0 15px 20px #000000b0;
     margin-bottom: 0;
+    z-index: 9999;
         
 }
 
@@ -147,6 +156,7 @@ section{
     display: inline-block;
     letter-spacing: 2px;
     border-radius: 2px;
+    z-index: 9999;
     
 }
 
@@ -269,14 +279,15 @@ section{
     transition: .3s ease-in-out;
     max-width: 350px;
     max-height: 200px;
+    z-index: 99;
     
 }
 
 .gallery-info img:hover {
     transform: scale(3) ;       
-    z-index: 1000 ;
+    z-index: 10000 ;
     border-radius: 5px;
-    
+    overflow: visible;    
 }
 
 .top1 img:hover{
@@ -417,7 +428,7 @@ section{
 
 .footer-social-links{
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     left: 0;
     right: 0;
     width: 25%;
@@ -425,7 +436,15 @@ section{
     margin: auto;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
+.footer-copyright{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
