@@ -36,8 +36,8 @@ html,body{
     height:100%;
     line-height:1;
     color: black !important;
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%) !important;    
-    font-family:'Noto Sans JP', sans-serif !important; 
+    background:linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%) !important;    
+    font-family:'Noto Sans JP', sans-serif; ;
     background-attachment: fixed !important;
     
 }
@@ -95,26 +95,26 @@ header ul li a{
     left: 0;
     height:00px ;
     background: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
-    color: #000 !important; 
     z-index: 9999;
 }
 
-.fixed ul li a{
+.fixed li{
     align-items: center;
     justify-content: center;
     height:100% ;
-    background: none;
-    color: #000 !important;    
-    
+    color: #000 !important;   
 }
 
 section{
-    padding: 60px 0;
-    height: 100%;
-    position: relative;
-    max-height: 100%;
-    min-height: 100%;
     box-sizing: border-box;
+    padding: 60px 100px;
+    height: 100vh;
+    width: 100vw;
+    position: sticky;    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;    
 }
 
 .home{
@@ -124,21 +124,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* background: url(../images/back.jpg) no-repeat ;
-    background-size: auto 100%;
-    background-position: center;
-    background-color:rgb(13, 13, 13); */
     background-attachment: fixed;
     z-index: 99;    
-}
-
-.home img{
-    position: absolute;
-    left:0;
-    top: 0;
-    margin-left: 20%;
-    margin-top: 10%;
-    z-index:-99;
 }
 
 .home h1{
@@ -148,8 +135,12 @@ section{
     margin-bottom: 0;
     z-index: 9999;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
-        
+    -webkit-text-stroke-color: black;        
+}
+
+.name img{
+    position: relative;
+    height: 60vh;    
 }
 
 .home h5{
@@ -167,29 +158,31 @@ section{
 
 .section-title{
     text-align: center;
+    margin-top: 20px;
 }
 
 .section-title h2{    
     display: inline-block;
-    font-size: 28px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    font-size: 28px;    
     border-bottom: 1px solid;
     text-transform: uppercase;
     padding:0 0 10px
 }
 
 .about-info{
-    width: 60%;    
+    min-width: 60%;    
+    max-width: max-content;
     margin: auto;
-    padding: 20px 0;
+    padding: 50px 50px;
     text-align: center;
     z-index: 99;
+    box-sizing: border-box;
 }
 
 .about-info p{
     line-height: 28px;
     font-size: 18 px;
+    max-width: 100%;
 
 }
 
@@ -226,18 +219,15 @@ section{
     line-height: 24px;
 }
 
-.service{
-    width: 60%;
-    height: max-content;
-    max-height: 100%;
-    margin:20px auto;
-    padding: 20px 0;
+
+.service-info{
+    min-width: 60%;    
+    max-width: max-content;
+    max-height: 100%;    
+    margin:20px 0;
+    padding: 20px 100px;
     text-align: center;
     z-index: 99;
-    
-}
-
-.service .service-info{
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0;
@@ -251,7 +241,7 @@ section{
 }
 
 .service .col img{
-    max-width: 100px;
+    width: 100px;
 }
 
 .service .col h3{
@@ -264,34 +254,30 @@ section{
     line-height: 28px;
 }
 
-.gallery{
+.gallery-info{
     width: max-content;
     margin:  auto;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
     z-index: 99;
-    
+      
 }
 
-.gallery-info{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    margin: auto;
-    grid-column-gap:20px;
-    grid-row-gap:30px;     
-}
+
 
 .gallery-info img{
     transition: .3s ease-in-out;
-    max-width: 350px;
-    max-height: 200px;
-    
+    max-width: 100%;
+    z-index: 99;    
 }
 
 .gallery-info img:hover {
     transform: scale(3) ;       
-    z-index: 1000 ;
+    z-index: 10000 ;
     border-radius: 5px;
-    
+    overflow: visible;    
 }
 
 .top1 img:hover{
@@ -332,6 +318,7 @@ section{
 
 .contact-info{
     width: 60%;
+    height: 60vh;
     display: flex;
     justify-content: center;
     margin: 50px auto;
@@ -364,14 +351,21 @@ section{
     text-transform: uppercase;
 }
 
-.project{
+.project-info{
     z-index: 15;   
+    width: 90%;    
+    max-height: 100vh;
+    margin: auto;
+    padding: 50px 50px;
+    text-align: center;
+    z-index: 99;
+    box-sizing: border-box;
 }
 
 
 .carousel{
-   box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.32);
-    min-height: 600px ;
+   box-shadow: 0px 0px 15px 15px rgba(255,255,255,0.16);    
+    max-height: 80vh;
 }
 
 .carousel-control.left {
@@ -386,14 +380,28 @@ section{
 
 .car{
     display: flex;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    max-height: 70vh;
 }
 
 .vid{
-    width: 75%;
-    min-height: 100%;
+    position: relative;  
+  width: 100%;
+  height: 70vh;
+  
 }
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
 
 .proj{
     margin-top: 40px;
@@ -410,7 +418,7 @@ section{
 }
 
 .proj_info .col{
-    width:20%;
+    width:15%;
     margin: 10px 15px;
     text-align: center;
 }
@@ -422,35 +430,108 @@ section{
 .proj_more{
     margin-top: 50px;
 }
-
+footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
 .footer-social-links svg{
+    color: #fff;    
     width: 40px;
     margin: 20px 20px;
     fill:rgba(24, 24, 24, 0.836);
 }
 
-.footer-social-links{
-    position: absolute;
-    bottom: 1;
-    left: 0;
-    right: 0;
-    width: 25%;
+.footer-social-links{    
+    width: 50;
     display: flex;    
     margin: auto;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
-.footer-copyright{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.footer-copyright{    
     margin: auto;
     text-align: center;
     margin-top: 20px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .gallery-info{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        margin: auto;
+        grid-column-gap:20px;
+        grid-row-gap:30px;     
+    }
 
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .gallery-info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        margin: auto;
+        grid-column-gap:20px;
+        grid-row-gap:30px;     
+    }
+    .gallery-info img{       
+        max-height: 300px;        
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .gallery-info{
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        margin: auto;
+        grid-column-gap:20px;
+        grid-row-gap:30px;     
+    }
+    .gallery-info img{       
+        max-height: 300px;        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .gallery-info{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: auto;
+        grid-column-gap:20px;
+        grid-row-gap:30px;     
+    }
+    .gallery-info img{       
+        max-height:150px;        
+    }
+    
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1921px) {
+    .gallery-info{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: auto;
+        grid-column-gap:20px;
+        grid-row-gap:30px;     
+    }
+    .gallery-info img{       
+        max-height: 400px;        
+    }
+}
