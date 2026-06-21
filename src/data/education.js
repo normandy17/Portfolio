@@ -1,0 +1,32 @@
+export const educationEntries = [
+  {
+    degree: "Artificial Intelligence & Machine Learning",
+    degree_de: "Künstliche Intelligenz & Machine Learning",
+    institution: "Ironhack",
+    period: "March 2026 – June 2026",
+    period_de: "März 2026 – Juni 2026",
+    location: "Berlin, Germany",
+    location_de: "Berlin, Deutschland",
+    highlight: true,
+    note: "Hands-on projects in NLP, Generative AI, LangChain, LangGraph, and RAG",
+    note_de: "Praxisprojekte in NLP, Generativer KI, LangChain, LangGraph und RAG",
+  },
+  {
+    degree: "Full Stack Web Development",
+    degree_de: "Full-Stack-Webentwicklung",
+    institution: "Masai School",
+    period: "2020 – 2021",
+    location: "Bengaluru, India",
+    location_de: "Bengaluru, Indien",
+    highlight: false,
+  },
+  {
+    degree: "Bachelor of Engineering",
+    degree_de: "Bachelor of Engineering",
+    institution: "Acharya Institute of Technology",
+    period: "2010 – 2014",
+    location: "Bengaluru, India",
+    location_de: "Bengaluru, Indien",
+    highlight: false,
+  },
+];

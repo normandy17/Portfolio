@@ -1,0 +1,60 @@
+export const experienceEntries = [
+  {
+    role: "Full Stack Developer",
+    role_de: "Full-Stack-Entwickler",
+    company: "Sapiens International Corporation",
+    period: "2021 – 2026",
+    location: "Bengaluru, India (Remote-capable)",
+    location_de: "Bengaluru, Indien (Remote möglich)",
+    highlights: [
+      "Built and maintained a no-code platform for digital journeys serving 10+ enterprise insurance clients across 3 continents.",
+      "Reduced UI bug backlog by ~35% through systematic React component refactoring.",
+      "Cut average release cycle time by ~20% via CI/CD pipeline optimisation.",
+      "Integrated 5+ third-party APIs including payment gateways and document management systems.",
+      "Served as Technical Product Owner for cross-functional teams of 8–12.",
+      "Shipped 15+ production releases coordinating QA, UX, documentation, and customer teams.",
+    ],
+    highlights_de: [
+      "Aufbau und Pflege einer No-Code-Plattform für digitale Customer Journeys für 10+ Enterprise-Versicherungskunden auf 3 Kontinenten.",
+      "Reduzierung des UI-Bug-Rückstands um ~35 % durch systematisches React-Komponenten-Refactoring.",
+      "Verkürzung der durchschnittlichen Release-Zykluszeit um ~20 % durch CI/CD-Pipeline-Optimierung.",
+      "Integration von 5+ Drittanbieter-APIs, darunter Zahlungsgateways und Dokumentenmanagementsysteme.",
+      "Funktion als Technical Product Owner für cross-funktionale Teams von 8–12 Personen.",
+      "Auslieferung von 15+ Produktionsreleases in Koordination mit QA, UX, Dokumentation und Kundenteams.",
+    ],
+  },
+  {
+    role: "Co-Founder & Application/Sales Engineer",
+    role_de: "Mitgründer & Applikations-/Vertriebsingenieur",
+    company: "Generate (3D Printing & Manufacturing)",
+    period: "2017 – 2019",
+    location: "Bengaluru, India",
+    location_de: "Bengaluru, Indien",
+    highlights: [
+      "Led engineering analysis to optimise product functionality for B2B manufacturing clients.",
+      "Drove ~15% cost reduction in production competitiveness.",
+      "Spearheaded business development, sales, and vendor management.",
+    ],
+    highlights_de: [
+      "Leitete technische Analysen zur Optimierung der Produktfunktionalität für B2B-Fertigungskunden.",
+      "Erzielte ~15 % Kostenreduktion in der Produktionswettbewerbsfähigkeit.",
+      "Trieb Geschäftsentwicklung, Vertrieb und Lieferantenmanagement voran.",
+    ],
+  },
+  {
+    role: "External Vendor / Partner Relations",
+    role_de: "Externer Dienstleister / Partnerbeziehungen",
+    company: "Uber",
+    period: "2016",
+    location: "Bengaluru, India",
+    location_de: "Bengaluru, Indien",
+    highlights: [
+      "Contributed to Uber Moto launch, managing a fleet of 50+ drivers.",
+      "Beta-tested Uber Dost app and delivered structured product feedback.",
+    ],
+    highlights_de: [
+      "Beitrag zum Uber Moto-Launch, Verwaltung einer Flotte von 50+ Fahrern.",
+      "Beta-Test der Uber Dost App und strukturiertes Produktfeedback geliefert.",
+    ],
+  },
+];
